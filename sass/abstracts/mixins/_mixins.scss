@@ -17,11 +17,11 @@ border-radius: 50%;
 @mixin border($w:1px, $s:solid, $c:black){
     border : $w $s $c;
 }
-@mixin iFrameVideo($w:560px, $h:315px){
-    width:100%;
-    height: auto;
-    aspect-ratio: calc($w/$h);
-}
+// @mixin iFrameVideo($w:560px, $h:315px){
+//     width:100%;
+//     height: auto;
+//     aspect-ratio: calc($w/$h);
+// }
 @mixin IFrameLegacy($w:560, $h:315){
     position: relative;
     height: 0;
@@ -33,5 +33,18 @@ border-radius: 50%;
         left: 0;
         width: 100%;
         height: 100%;
+    }
+}
+@mixin advancePolyClip($edge :bottom, $amt:5%){
+    $tl : 0 0;
+    $tm: 50% 0; 
+    $tr : 100% 0; 
+    $rm : 100% 50%; 
+    $br : 100% 100%;
+    $bm : 50% 100%;
+    $bl : 0 100%;
+    $lm : 0 50%;
+    @if $edge == bottom { 
+        $bm: 50% calc(100%- $amt)
     }
 }
