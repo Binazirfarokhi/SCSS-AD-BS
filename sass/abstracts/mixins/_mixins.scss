@@ -7,8 +7,31 @@
 border-radius: 50%;
 }
 @mixin centered-rounded {
-      margin :unset auto;
-    display: block;
-    border-radius: 50%;
+     @include centered;
+     @include rounded;
     
+}
+@mixin cornered ($amt:4px){
+    border-radius: $amt;
+}
+@mixin border($w:1px, $s:solid, $c:black){
+    border : $w $s $c;
+}
+@mixin iFrameVideo($w:560px, $h:315px){
+    width:100%;
+    height: auto;
+    aspect-ratio: calc($w/$h);
+}
+@mixin IFrameLegacy($w:560, $h:315){
+    position: relative;
+    height: 0;
+    padding-top: 25px;
+    padding-bottom: calc($w/$h *100%);
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }

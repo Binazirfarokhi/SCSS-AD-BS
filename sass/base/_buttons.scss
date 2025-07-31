@@ -1,0 +1,9 @@
+/*BUTTONS++++++++++++++++++*/
+button{
+    border: 1px solid $contrast-ml;
+    @include cornered(4px);
+    @include border();
+}
+button.ultra-round{
+    @include cornered();
+}

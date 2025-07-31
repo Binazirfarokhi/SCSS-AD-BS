@@ -9,3 +9,14 @@ img.centered{
 img.rounded{
     @include rounded;
 }
+iframe{
+    width:100%;
+    aspect-ratio: 1.777;
+    height: auto;
+}
+.video-wrapper { 
+    @include IFrameLegacy()
+}
+// .video-1777{
+//     @include iFrameVideo(70px,70px)
+// }
