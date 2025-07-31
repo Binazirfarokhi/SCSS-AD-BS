@@ -1,0 +1,11 @@
+/*Media++++++++++++*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+img.centered{
+    @include centered;
+}
+img.rounded{
+    @include rounded;
+}

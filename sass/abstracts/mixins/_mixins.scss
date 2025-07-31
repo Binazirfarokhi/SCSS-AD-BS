@@ -1,0 +1,14 @@
+@mixin centered{
+    margin :unset auto;
+    display: block; 
+
+}
+@mixin rounded{ 
+border-radius: 50%;
+}
+@mixin centered-rounded {
+      margin :unset auto;
+    display: block;
+    border-radius: 50%;
+    
+}

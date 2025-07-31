@@ -1,0 +1,14 @@
+/*HEADER_FOOTER ++++++++++++++++++*/
+.heading-menu-wrapper{
+    display: flex;
+    gap: 1rem
+    ;
+    align-items: center;
+    justify-content: space-between;
+   .site-header & {
+    flex-flow: row nowrap;
+   }
+   .site-footer &{
+   flex-flow: row-reverse nowrap;
+   }
+}

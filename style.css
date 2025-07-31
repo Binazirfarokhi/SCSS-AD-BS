@@ -91,6 +91,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #4b5566;
 }
 
 /*MEDIA ++++++++++++*/
@@ -103,6 +105,97 @@ img {
 video {
   max-width: 100%;
   height: auto;
+}
+
+/*LINKS _+++++++++++++++++++++*/
+a {
+  text-decoration: none;
+  color: hotpink;
+}
+a:visited {
+  color: pink;
+}
+a:hover {
+  color: deeppink;
+}
+
+/* the & refers to the parent we nested in*/
+/*Media++++++++++++*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.centered {
+  margin: unset auto;
+  display: block;
+}
+
+img.rounded {
+  border-radius: 50%;
+}
+
+/*Navigation++++++++++++++++*/
+nav {
+  padding: 0.25rem;
+}
+nav ul {
+  letter-spacing: normal;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-align: center;
+  display: block;
+  padding: 0.25rem 0.5rem;
+}
+
+/*HEADER_FOOTER ++++++++++++++++++*/
+.heading-menu-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header .heading-menu-wrapper {
+  flex-flow: row nowrap;
+}
+.site-footer .heading-menu-wrapper {
+  flex-flow: row-reverse nowrap;
+}
+
+/*MAIN_CONTENT*/
+.main-content {
+  display: grid;
+  gap: 1rem;
+}
+@media screen and (min-width: 640px) {
+  .main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 840px) {
+  .main-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1120px) {
+  .main-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*ACCESSIBILITY ++++++++++++++++++*/
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=style.css.map */

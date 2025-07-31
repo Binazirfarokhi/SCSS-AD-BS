@@ -1,0 +1,12 @@
+/*LINKS _+++++++++++++++++++++*/
+a{
+    text-decoration: none;
+    color:$accent-m;
+    &:visited{
+        color:$accent-l;
+    }
+    &:hover{
+        color:$accent-d;
+    }
+}
+/* the & refers to the parent we nested in*/
